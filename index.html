@@ -1,136 +1,144 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Muhammad Zubair | Cybersecurity Portfolio</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
 <style>
-/* ------------------- Body & Fonts ------------------- */
-body, html {
-    margin:0;
-    padding:0;
-    height:100%;
-    font-family: 'Share Tech Mono', monospace;
-    color:#00ff9c;
-    background:#0a0a0a;
-    overflow-x:hidden;
+
+body{
+margin:0;
+font-family:'Share Tech Mono', monospace;
+background:#0a0a0a;
+color:#00ff9c;
 }
 
-/* ------------------- Full-screen Cyber Grid ------------------- */
-#gridCanvas {
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    z-index:-1;
-    background:black;
-}
+/* HEADER */
 
-/* ------------------- Header ------------------- */
 header{
-    text-align:center;
-    padding:40px 20px;
-    background:rgba(0,0,0,0.7);
-    border-bottom:2px solid #00ff9c;
+text-align:center;
+padding:60px 20px;
+border-bottom:2px solid #00ff9c;
+}
+
+/* PROFILE IMAGE */
+
+.profile{
+width:160px;
+height:160px;
+border-radius:50%;
+border:3px solid #00ff9c;
+box-shadow:0 0 25px #00ff9c;
+object-fit:cover;
+margin-bottom:20px;
 }
 
 header h1{
-    font-size:48px;
-    margin:0;
+margin:10px 0;
+font-size:40px;
 }
 
-header p{
-    font-size:18px;
+.bio{
+max-width:700px;
+margin:auto;
+font-size:16px;
+line-height:1.6;
+opacity:0.9;
 }
 
-header a{
-    color:#00ff9c;
-    text-decoration:none;
-    font-weight:bold;
-}
+/* SECTIONS */
 
-/* ------------------- Sections ------------------- */
 section{
-    padding:40px 20px;
-    max-width:1000px;
-    margin:auto;
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
 }
 
 .card{
-    background:#111;
-    padding:25px;
-    margin:20px 0;
-    border-radius:10px;
-    box-shadow:0 0 20px #00ff9c33;
+background:#111;
+margin-bottom:25px;
+padding:25px;
+border-radius:10px;
+box-shadow:0 0 20px #00ff9c33;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 0 30px #00ff9c66;
 }
 
 .card h2{
-    border-bottom:1px solid #00ff9c;
-    padding-bottom:10px;
+border-bottom:1px solid #00ff9c;
+padding-bottom:10px;
 }
 
 ul{
-    line-height:30px;
+line-height:30px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+border-top:1px solid #00ff9c;
+opacity:0.7;
 }
 
 a{
-    color:#00ff9c;
-    text-decoration:none;
-}
-
-/* ------------------- Terminal / AI Assistant ------------------- */
-#terminal {
-    background:#000;
-    border:2px solid #00ff9c;
-    padding:20px;
-    border-radius:10px;
-    margin-top:30px;
-    font-family: 'Share Tech Mono', monospace;
-    height:300px;
-    overflow-y:auto;
-}
-
-#terminal input{
-    background:none;
-    border:none;
-    outline:none;
-    color:#00ff9c;
-    width:100%;
-    font-family: 'Share Tech Mono', monospace;
-}
-
-footer{
-    text-align:center;
-    padding:20px;
-    border-top:1px solid #00ff9c;
+color:#00ff9c;
+text-decoration:none;
 }
 
 </style>
 </head>
+
 <body>
 
-<canvas id="gridCanvas"></canvas>
-
 <header>
+
+<img src="profile.jpg" class="profile">
+
 <h1>💀 Muhammad Zubair</h1>
-<p>Web Penetration Tester | Cybersecurity Enthusiast</p>
-<p>
-<a href="https://www.linkedin.com/in/muhammad09-zubair-aa592430b/" target="_blank">LinkedIn Profile</a>
+
+<p class="bio">
+Cybersecurity Enthusiast from Pakistan specializing in Web Application Security,
+Ethical Hacking, and Red Team operations. Passionate about discovering vulnerabilities,
+learning modern attack techniques, and improving defensive security strategies.
 </p>
+
+<br>
+
+<a href="https://www.linkedin.com/in/muhammad09-zubair-aa592430b/" target="_blank">
+🔗 Connect on LinkedIn
+</a>
+
 </header>
 
 <section>
-<div class="card">
-<h2>👨‍💻 About Me</h2>
-<p>
-I am Muhammad Zubair, a cybersecurity enthusiast from Pakistan with strong interest in Web Application Security, Ethical Hacking and Red Team operations. I practice on vulnerable labs like DVWA and CyberWarFare Labs to sharpen my skills.
-</p>
-</div>
 
 <div class="card">
+
+<h2>👨‍💻 About Me</h2>
+
+<p>
+I am Muhammad Zubair, a cybersecurity enthusiast focused on web application security
+and penetration testing. I actively practice through vulnerable labs and security
+training environments to sharpen my offensive security skills.
+</p>
+
+</div>
+
+
+<div class="card">
+
 <h2>🛠 Skills</h2>
+
 <ul>
 <li>Web Application Penetration Testing</li>
 <li>Reconnaissance & Information Gathering</li>
@@ -140,10 +148,14 @@ I am Muhammad Zubair, a cybersecurity enthusiast from Pakistan with strong inter
 <li>OWASP Top 10</li>
 <li>Red Team Operations</li>
 </ul>
+
 </div>
 
+
 <div class="card">
+
 <h2>⚔️ Pentesting Tools</h2>
+
 <ul>
 <li>Nmap</li>
 <li>Burp Suite</li>
@@ -155,132 +167,58 @@ I am Muhammad Zubair, a cybersecurity enthusiast from Pakistan with strong inter
 <li>Whois</li>
 <li>Nslookup</li>
 </ul>
+
 </div>
 
+
 <div class="card">
+
 <h2>🧪 Practice Labs</h2>
+
 <ul>
 <li>DVWA (Damn Vulnerable Web Application)</li>
 <li>CyberWarFare Labs</li>
 <li>Web Security Practice Labs</li>
 </ul>
+
 </div>
 
+
 <div class="card">
+
 <h2>🏆 Certifications</h2>
+
 <ul>
 <li>Introduction to Artificial Intelligence — Simplilearn</li>
 <li>Introduction to Cybersecurity Awareness</li>
 <li>OWASP API Security Top 10 — APIsec University</li>
 <li>Certified Red Team Analyst — CyberWarFare Labs</li>
 </ul>
+
 </div>
 
+
 <div class="card">
-<h2>📡 Bug Bounty & Current Learning</h2>
+
+<h2>📡 Current Learning</h2>
+
 <ul>
 <li>Advanced Web Penetration Testing</li>
 <li>Burp Suite Professional Usage</li>
-<li>Reconnaissance Automation</li>
+<li>Recon Automation</li>
 <li>Bug Bounty Hunting</li>
 <li>Red Team Operations</li>
 </ul>
-</div>
 
-<div class="card">
-<h2>💻 AI Pentesting Assistant</h2>
-<div id="terminal">
-<div>> Welcome to Muhammad Zubair's AI Pentesting Assistant</div>
-<div>> Type "help" for commands</div>
-<input type="text" id="cmdInput" placeholder="Enter command...">
-</div>
 </div>
 
 </section>
 
 <footer>
-<p>© 2026 Muhammad Zubair | Cybersecurity Portfolio</p>
+
+© 2026 Muhammad Zubair | Cybersecurity Portfolio
+
 </footer>
-
-<script>
-// ------------------- Cyber Grid Animation -------------------
-const canvas = document.getElementById('gridCanvas');
-const ctx = canvas.getContext('2d');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-let stars = [];
-for(let i=0;i<500;i++){
-    stars.push({x:Math.random()*canvas.width, y:Math.random()*canvas.height, z:Math.random()*canvas.width});
-}
-
-function animate(){
-    ctx.fillStyle = '#000';
-    ctx.fillRect(0,0,canvas.width,canvas.height);
-    for(let i=0;i<stars.length;i++){
-        let star = stars[i];
-        star.z -= 2;
-        if(star.z <=0){
-            star.z = canvas.width;
-            star.x = Math.random()*canvas.width;
-            star.y = Math.random()*canvas.height;
-        }
-        let k = 128.0/star.z;
-        let px = star.x*k + canvas.width/2;
-        let py = star.y*k + canvas.height/2;
-        if(px>=0 && px<=canvas.width && py>=0 && py<=canvas.height){
-            let size = (1-star.z/canvas.width)*5;
-            ctx.fillStyle = '#00ff9c';
-            ctx.beginPath();
-            ctx.arc(px,py,size,0,Math.PI*2);
-            ctx.fill();
-        }
-    }
-    requestAnimationFrame(animate);
-}
-animate();
-
-// ------------------- Terminal / AI Assistant -------------------
-const terminal = document.getElementById('terminal');
-const input = document.getElementById('cmdInput');
-
-input.addEventListener('keypress', function(e){
-    if(e.key==='Enter'){
-        const cmd = input.value.toLowerCase();
-        let response = '';
-        switch(cmd){
-            case 'help':
-                response = 'Commands: info, skills, tools, labs, certifications, bugbounty';
-                break;
-            case 'info':
-                response = 'Muhammad Zubair — Web Penetration Tester, Red Team Enthusiast';
-                break;
-            case 'skills':
-                response = 'Web Pentesting, Recon, Directory Bruteforce, Nmap, BurpSuite, Red Team Ops';
-                break;
-            case 'tools':
-                response = 'Nmap, Burp Suite, Subfinder, Amass, Assetfinder, Dirsearch, Gobuster, Whois, Nslookup';
-                break;
-            case 'labs':
-                response = 'DVWA, CyberWarFare Labs, Practice Labs';
-                break;
-            case 'certifications':
-                response = 'AI Simplilearn, Cybersecurity Awareness, OWASP API Top10, Certified Red Team Analyst';
-                break;
-            case 'bugbounty':
-                response = 'Learning Bug Bounty, Recon Automation, Reporting Vulnerabilities';
-                break;
-            default:
-                response = 'Command not found. Type "help" for list of commands.';
-        }
-        const div = document.createElement('div');
-        div.textContent = '> '+response;
-        terminal.insertBefore(div,input);
-        input.value='';
-        terminal.scrollTop = terminal.scrollHeight;
-    }
-});
-</script>
 
 </body>
 </html>
